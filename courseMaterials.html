@@ -36,6 +36,33 @@
             }
             .row.content {height: auto;}
         }
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+
+        #myTable {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #ddd;
+            font-size: 18px;
+        }
+
+        #myTable th, #myTable td {
+            text-align: left;
+            padding: 12px;
+        }
+
+        #myTable tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+        #myTable tr.header, #myTable tr:hover {
+            background-color: #f1f1f1;
+        }
+
     </style>
 </head>
 <body>
@@ -50,10 +77,10 @@
                 <li><a href="#section2">簡歷</a></li>
                 <li><a href="#section3">學術</a></li>
                 <li><a href="#section4">著作</a></li>
-                <li><a href="courseMaterials.html">課程教材(Course materials)</a></li>
+                <li class="active"><a href="courseMaterials.html">課程教材(Course materials)</a></li>
                 <li><a href="#section6">雜記(Miscellanies)</a></li>
                 <li><a href="#section7">連結(Link)</a></li>
-                <li class="active"><a href="lab.html">實驗室(Lab)</a></li>
+                <li ><a href="lab.html">實驗室(Lab)</a></li>
 
             </ul><br>
             <div class="input-group">
@@ -75,30 +102,45 @@
 
 
 
+
+
+
+
+
+
+
             <hr>
-            <h1>指導學生:</h1>
-            <h3><span style="font-family: 標楷體 ">邱寶瑩 (惠聖公司)</span></h3>
-            <h3><span style="font-family: 標楷體 "> 耿履夷 (中華聯網寬頻)</span></h3>
-            <h3><span style="font-family: 標楷體 ">尤良昌 (彰化鹿港國小)</span></h3>
-            <h3><span style="font-family: 標楷體 ">陳泰良 (合勤)</span></h3>
 
 
 
+            <table id="myTable">
 
+                <tr>
+                    <td>2002:</td>
+                    <td>資料結構,資訊網路,網際網路管理與實作, PDA 程式設計.</td>
+                </tr>
 
-            <!--<h2> <span class="label label-primary">Education</span></h2>-->
-            <!--&lt;!&ndash;<h5><span class="glyphicon glyphicon-time"></span> Post by Jane Dane, Sep 27, 2015.</h5>&ndash;&gt;-->
-            <!--&lt;!&ndash;<h5><span class="label label-danger">Food</span> <span class="label label-primary">Ipsum</span></h5><br>&ndash;&gt;-->
-            <!--&lt;!&ndash;<p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>&ndash;&gt;-->
-            <!--<p>BS~Ph. D.: CSIE in National Chiao-Tung University</p>-->
-            <!--<br><br>-->
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Germany</td>
+                </tr>
 
-            <!--<h4><small>RECENT POSTS</small></h4>-->
-            <hr>
-            <!--<h2>Officially Blogging</h2>-->
-            <!--<h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>-->
-            <!--<h5><span class="label label-success">Lorem</span></h5><br>-->
-            <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Germany</td>
+                </tr>
+
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Germany</td>
+                </tr>
+
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Germany</td>
+                </tr>
+
+            </table>
             <hr>
 
 
