@@ -36,6 +36,28 @@
             .row.content {height: auto;}
         }
 
+        .button {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #1e90ff;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .button:hover {background-color: #8a2bff  }
+
+        .button:active {
+            background-color: #8a2bff;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+
 
         table {
             border-collapse: collapse;
@@ -48,7 +70,7 @@
             margin-left: 30px;
             margin-right: 30px;
             margin-bottom: 30px;
-            border: 10px solid #ff724f;
+            border: 10px solid #8a2bff;
             font-size: 15px;
 
         }
@@ -83,12 +105,12 @@
                 <br>
                 <img src="wzyang.jpg" class="img-circle" alt="Cinque Terre" width="120" height="150">
                 <!--<img src="wzyang.jpg" class="img-thumbnail" alt="Cinque Terre" width="250" height="200">-->
-                <li class="active"><a href="index.html">首頁</a></li>
+                <li><a href="index.html">首頁</a></li>
                 <li><a href="teacherintroduce.html">簡歷</a></li>
                 <li><a href="#section3">學術</a></li>
                 <li><a href="publications.html">刊物</a></li>
                 <li><a href="courseMaterials.html">課程教材(Course materials)</a></li>
-                <li><a href="miscellany.html">雜記(Miscellanies)</a></li>
+                <li  class="active"><a href="miscellany.html">雜記(Miscellanies)</a></li>
                 <li><a href="link.html">連結(Link)</a></li>
                 <li ><a href="lab.html">實驗室(Lab)</a></li>
 
@@ -115,78 +137,72 @@
 
             <!--<h2> <span class="label label-primary">Education</span></h2>-->
 
-            <br>
-            <table border="1" >
-                <tr>
-                <td > Education</td>
-                <td > BS~Ph. D.: CSIE in National Chiao-Tung University</td>
+            <div align="left">
+                <button class="button"id="s1"  onclick="changedouble()">財經:</button><br>
+                <div id="g1" style="display: none" align="center">
 
-                </tr>
+                    <br>
+                    <table >
 
+                        <tr>
 
-                <tr>
-                <td> Research Interest:</td>
-                <td > Performance of PCS networks, VoIP, High speed network</td>
+                            <td><a href="http://www.businessweekly.com.tw/webarticle.php?id=20867&p=1"> 2.6兆退休金黑洞, 全民埋單!! (2005/9)</a></td>
+                        </tr>
 
-                </tr>
+                        <tr>
 
+                            <td>6th 龍騰論文優等獎，NCS 2001 最佳論文, Mobile Computing Workshop 2004 Excellent Paper Award。</td>
 
-                <tr>
-                    <td > Entertainment:</td>
-                    <td > (table) tennis, badminton,
-                        basketball, swimming,
-                          mountain climbing
-                            chess, games.</td>
-                </tr>
+                        </tr>
 
-            </table>
+                        <tr>
 
-            <br>
+                            <td >指導學生參加”第六屆工程科技與中西醫學應用會議”論文競試，獲得佳作. Sep., 2003.</td>
 
-            <table >
+                        </tr>
 
-                <tr>
+                        <tr>
 
-                    <td>Others:</td>
-                </tr>
+                            <td >教育部通訊課程改進計畫無線網路組種子教師.</td>
 
-                <tr>
+                        </tr>
 
-                    <td>6th 龍騰論文優等獎，NCS 2001 最佳論文, Mobile Computing Workshop 2004 Excellent Paper Award。</td>
+                        <tr>
 
-                </tr>
+                            <td>92 年優良教師</td>
 
-                <tr>
+                        </tr>
 
-                    <td >指導學生參加”第六屆工程科技與中西醫學應用會議”論文競試，獲得佳作. Sep., 2003.</td>
+                        <tr>
 
-                </tr>
+                            <td>93 年優良教師</td>
 
-                <tr>
-
-                    <td >教育部通訊課程改進計畫無線網路組種子教師.</td>
-
-                </tr>
-
-                <tr>
-
-                    <td>92 年優良教師</td>
-
-                </tr>
-
-                <tr>
-
-                    <td>93 年優良教師</td>
-
-                </tr>
+                        </tr>
 
 
-            </table>
+                    </table>
+
+
+                </div>
+                <br>
+
+                <script>
+                    var isShowclick = false;
+                    function changedouble() {
+                        if(!isShowclick) {
+                            isShowclick = true;
+                            document.getElementById('g1').style.display='';
+                        }
+                        else {
+                            isShowclick = false;
+                            document.getElementById('g1').style.display='none';
+                        }
+                    }
+                </script>
 
 
 
-
-
+            </div>
         </div>
     </div>
 </div>

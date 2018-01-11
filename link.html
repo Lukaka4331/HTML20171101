@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+
+    <style>
+        /* Set height of the grid so .sidenav
+         can be 100% (adjust if needed) */
+        .row.content {height: 1500px}
+
+        /* Set gray background color and 100% height */
+        .sidenav {
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+
+
+
+
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {height: auto;}
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+
+        #myTable {
+            /*border-collapse: collapse;*/
+            /*width: 100%;*/
+            /*border: 1px solid #ddd;*/
+            border: 10px solid #ff724f;
+            background-color: #ffffff;
+
+            font-size: 20px;
+        }
+
+        #myTable th, #myTable td {
+            text-align: left;
+            padding: 12px;
+        }
+
+        #myTable tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+        #myTable tr:hover {
+            background-color: #f1f1f1;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row content">
+        <div class="col-sm-3 sidenav">
+            <ul class="nav nav-pills nav-stacked">
+                <br>
+                <img src="wzyang.jpg" class="img-circle" alt="Cinque Terre" width="120" height="150">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="teacherintroduce.html">簡歷</a></li>
+                <li><a href="#section3">學術</a></li>
+                <li><a href="publications.html">刊物</a></li>
+                <li><a href="courseMaterials.html">課程教材(Course materials)</a></li>
+                <li><a href="miscellany.html">雜記(Miscellanies)</a></li>
+                <li  class="active"><a href="link.html">連結(Link)</a></li>
+                <li ><a href="lab.html">實驗室(Lab)</a></li>
+
+            </ul><br>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search Blog..">
+                <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+            </div>
+        </div>
+
+        <div class="col-sm-9  " align="center" style="font-family: 'Kalam', cursive;height: 100%;background-color: #fe9aff" 　>
+            <h1>Wei-Zu Yang 楊偉儒</h1>
+            <h4><small>Assistant Professor of Department of Computer Science and Information Engineering,</small></h4>
+            <h4><small>Asia University, WuFeng, Taichung, Taiwan.</small></h4>
+            <p> Tel: +886-4-23323456-1843</p>
+            <p>Email: wzyang@asia.edu.tw</p>
+
+            <br>
+
+                <table id="myTable">
+
+                    <tr>
+                        <td>Research</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Investment (君子無所爭，必也射乎？)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>國內</td>
+                        <td>國外</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://mops.twse.com.tw/mops/web/index">台灣證券交易所公開資訊觀測站 </a></td>
+                        <td><a href="http://www.lidicity.com/lieguo/lgzy.html">世界各國政府網站1</a>,<a href="http://www.insidepolitics.org/world.html">世界各國政府網站2</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.cbc.gov.tw"> 中央銀行(利率, 重貼現率, 貨幣供給,外匯存底) </a></td>
+                        <td><a href="http://www.odci.gov/cia/publications/factbook/index.html">World fact book</a></td>
+
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.abri.gov.tw"> 房地產景氣燈號 </a></td>
+                        <td><a href="http://www.ez-going.com.tw/helper/">各國旅遊資訊</a></td>
+
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.dgbas.gov.tw"> 行政院主計處-消費者物價指數 (5), 失業率, <br>薪資變動率(23), 政府統計資料, 重要經社指標</a></td>
+                        <td>美國(<a href="http://www.chinese-e-search.com/yp/usgov.htm">美國政府網站</a>,<a href="http://www.commerce.org">商務部</a>,<a href="http://www.dol.gov">勞工部</a>,<br><a href="http://www.federalreserve.gov">聯準會</a>,<a href="http://www.napm.org/">採購經理人協會</a>)</td>
+
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.ndc.gov.tw/News7.aspx?n=5F5662157BC98A7D"> 經建會-景氣對策信號 (27) </a></td>
+                        <td>日本(<a href="http://www.kantei.go.jp/jp/link/server_j.html">日本政府網站</a>)</td>
+
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.moea.gov.tw/index.htm">經濟部</a></td>
+                        <td><a href="http://www.worldbank.org">世界銀行</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.cier.edu.tw/"> 中經院 </a></td>
+                        <td><a href="http://www.imf.org/">IMF</a></td>
+
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.tier.org.tw/"> 台經院</a></td>
+                        <td><a href="http://www.globalinsight.com/">環球透視預測機構</a></td>
+
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.tri.org.tw/"> 台綜院 </a></td>
+                        <td><a href="http://www.oecd.org">經濟合作發展組織</a></td>
+                    </tr>
+
+
+
+
+
+
+
+
+
+
+                    <tr>
+                        <td>Gaming：</td>
+                        <td>
+                            <a href="http://www.combatsim.com/">Combat-sim</a>
+
+                            <!--<a href="https://www.gamebase.com.tw/">遊戲基地</a>-->
+
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+
+                            <!--<a href="http://www.gamer.com.tw">巴哈姆特</a>-->
+                            <a href="http://fsinsider.com/">MS Flight Simulator</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <!--<a href="http://www.combatsim.com/">Combat-sim</a>-->
+                            <a href="http://www.subsim.com/">Sub-Sim</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+
+                        <td>
+                        <a href="https://www.gamebase.com.tw/">遊戲基地</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+
+                        <td>
+                        <a href="http://www.gamer.com.tw">巴哈姆特</a>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Magazines：</td>
+                        <td><a href="http://www.cw.com.tw/">天下雜誌</a></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><a href="http://www.businessweekly.com.tw">商業週刊</a></td>
+
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><a href="http://www.economist-taiwan.com/">經濟學人</a></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><a href="http://www.sciam.com.tw">科學人雜誌</a></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><a href="http://www.hbrtaiwan.com/Main/index.aspx">哈佛商業評論</a></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><a href="http://www.flightsimpilot.net/">PC Pilot 中文版</a></td>
+                    </tr>
+
+
+
+                </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+<footer class="container-fluid">
+    <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
