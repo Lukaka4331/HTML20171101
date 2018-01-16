@@ -1,4 +1,10 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: user
+ * Date: 2018/1/12
+ * Time: 下午 06:17
+ */
 session_start();
 ?>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -10,15 +16,16 @@ $dataId = $_POST['dataId'];
 $content = $_POST['content'];
 if($_SESSION['id'] != null)
 {
-    $sql = "update `$dataName` set info='$content' where id='$dataId'";
+    //更新資料庫資料語法
+    $sql = "INSERT INTO `$dataName` (`id`, `info`) VALUES (NULL, '$content')";
     if(mysqli_query($link,$sql))
     {
-        echo '修改成功!';
+        echo '新增成功!';
         echo '<meta http-equiv="REFRESH" CONTENT="1;url=index.php">';
     }
     else
     {
-        echo '修改失敗!';
+        echo '新增失敗!';
         echo '<meta http-equiv="REFRESH" CONTENT="1;url=index.php">';
     }
 }

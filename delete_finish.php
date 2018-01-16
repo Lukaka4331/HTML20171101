@@ -1,21 +1,21 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: USER
- * Date: 2017/12/6
- * Time: 上午 11:20
- */
-?>
 <?php session_start(); ?>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    /**
+    * Created by PhpStorm.
+    * User: USER
+    * Date: 2017/11/29
+    * Time: 上午 11:20
+    */
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+
 <?php
 include("mysql_connect.inc.php");
 $id = $_POST['id'];
-if($_SESSION['username'] != null)
-{
+if($_SESSION['id'] != null){
     //刪除資料庫資料語法
-    $sql = "delete from member_table where username='$id'";
-    if(mysql_query($sql))
+    $sql = "delete from `user` where `id`='$id'";
+    if(@mysqli_query($link,$sql))
     {
         echo '刪除成功!';
         echo '<meta http-equiv=REFRESH CONTENT=2;url=member.php>';
@@ -32,4 +32,3 @@ else
     echo '<meta http-equiv=REFRESH CONTENT=2;url=index.php>';
 }
 ?>
-

@@ -8,6 +8,8 @@ session_start();
     $row = @mysqli_fetch_row($result);
 }
 echo '
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +34,7 @@ echo '
         /* Set black background color, white text and some padding */
         footer {
             background-color: #555;
-            color: #1bff75;
+            color: white;
             padding: 15px;
         }
 
@@ -47,12 +49,10 @@ echo '
         }
 
 
-
         table {
             border-collapse: collapse;
             border-spacing: 0;
             /*width: 100%;*/
-            background-color: #ffffff;
 
             margin: 30px;
             margin-top: 30px;
@@ -81,7 +81,6 @@ echo '
 
 
 
-
     </style>
 </head>
 <body>
@@ -98,11 +97,12 @@ if (isset($_SESSION['id'])) {
     echo '<li><a href="login.php"><span class="glyphicon glyphicon-log-in"> Login</a></li>';
 }
 echo'
+
                 <br>
                 <img src="wzyang.jpg" class="img-circle" alt="Cinque Terre" width="120" height="150">
                 <!--<img src="wzyang.jpg" class="img-thumbnail" alt="Cinque Terre" width="250" height="200">-->
-                <li class="active"><a href="index.php">首頁</a></li>
-                <li><a href="teacherintroduce.php">簡歷</a></li>
+                <li><a href="index.php">首頁</a></li>
+                <li class="active"><a href="teacherintroduce.php">簡歷</a></li>
                 <li><a href="publications.php">刊物</a></li>
                 <li><a href="courseMaterials.php">課程教材(Course materials)</a></li>
                 <li><a href="miscellany.php">雜記(Miscellanies)</a></li>
@@ -128,78 +128,29 @@ echo'
             <h4><small>Assistant Professor of Department of Computer Science and Information Engineering,</small></h4>
             <h4><small>Asia University, WuFeng, Taichung, Taiwan.</small></h4>
             <p> Tel: +886-4-23323456-1843</p>
-            <p>Email: wzyang@asia.edu.tw</p>
+            <p><a href="mailto:wzyang@asia.edu.tw">Email: wzyang@asia.edu.tw</a></p>
 
             <!--<h2> <span class="label label-primary">Education</span></h2>-->
 
-            <br>
-            <table border="1" >
-                <tr>
-                <td > Education</td>
-                <td > BS~Ph. D.: CSIE in National Chiao-Tung University</td>
+            <hr>
 
-                </tr>
+            <div style="font-size: 20px">
+            <h1>Welcome</h1>
+            <h3>基本資料:</h3>
+            <p>姓名：楊偉儒／Wei-Zu Yang</p>
+            <p>任職單位：資訊工程學系 專案助理教授</p>
+            <p>E-mail：wzyang@asia.edu.tw</p>
 
-
-                <tr>
-                <td> Research Interest:</td>
-                <td > Performance of PCS networks, VoIP, High speed network</td>
-
-                </tr>
-
-
-                <tr>
-                    <td > Entertainment:</td>
-                    <td > (table) tennis, badminton,
-                        basketball, swimming,
-                          mountain climbing
-                            chess, games.</td>
-                </tr>
-
-            </table>
-
-            <br>
-
-            <table >
-
-                <tr>
-
-                    <td>Others:</td>
-                </tr>
-
-                <tr>
-
-                    <td>6th 龍騰論文優等獎，NCS 2001 最佳論文, Mobile Computing Workshop 2004 Excellent Paper Award。</td>
-
-                </tr>
-
-                <tr>
-
-                    <td >指導學生參加”第六屆工程科技與中西醫學應用會議”論文競試，獲得佳作. Sep., 2003.</td>
-
-                </tr>
-
-                <tr>
-
-                    <td >教育部通訊課程改進計畫無線網路組種子教師.</td>
-
-                </tr>
-
-                <tr>
-
-                    <td>92 年優良教師</td>
-
-                </tr>
-
-                <tr>
-
-                    <td>93 年優良教師</td>
-
-                </tr>
+                <br>
+                <h1>學歷</h1>
+                <p>交通大學 -- 博士</p>
+                <br>
+                <h1>經歷</h1>
+                <p>國立交通大學資訊工程 研究助理教授</p>
 
 
-            </table>
 
+        </div>
 
 
 

@@ -1,3 +1,13 @@
+<?php
+session_start();
+?>
+<?php if (isset($_SESSION['id'])) {
+    include("mysql_connect.inc.php");
+    $sql = "SELECT * FROM `user` where id = '$id'";
+    $result = mysqli_query($link,$sql);
+    $row = @mysqli_fetch_row($result);
+}
+echo '
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +40,7 @@
             padding: 15px;
         }
 
-        /* On small screens, set height to 'auto' for sidenav and grid */
+        /* On small screens, set height to \'auto\' for sidenav and grid */
         @media screen and (max-width: 767px) {
             .sidenav {
                 height: auto;
@@ -75,16 +85,23 @@
 <div class="container-fluid">
     <div class="row content">
         <div class="col-sm-3 sidenav">
-            <ul class="nav nav-pills nav-stacked">
+            <ul class="nav nav-pills nav-stacked">';
+if (isset($_SESSION['id'])) {
+    echo '<li ><a href = "logout.php" ><span class="glyphicon glyphicon-log-in"> Logout</span></a ></li >
+<li ><a href = "member.php" ><span style="font-family: sans-serif;"> 控制台</span></a ></li >';
+}else{
+    echo '<li><a href="login.php"><span class="glyphicon glyphicon-log-in"> Login</a></li>';
+}
+echo'
                 <br>
                 <img src="wzyang.jpg" class="img-circle" alt="Cinque Terre" width="120" height="150">
-                <li><a href="index.html">首頁</a></li>
-                <li><a href="teacherintroduce.html">簡歷</a></li>
-                <li><a href="publications.html">刊物</a></li>
-                <li><a href="courseMaterials.html">課程教材(Course materials)</a></li>
-                <li><a href="miscellany.html">雜記(Miscellanies)</a></li>
-                <li  class="active"><a href="link.html">連結(Link)</a></li>
-                <li ><a href="lab.html">實驗室(Lab)</a></li>
+                <li><a href="index.php">首頁</a></li>
+                <li><a href="teacherintroduce.php">簡歷</a></li>
+                <li><a href="publications.php">刊物</a></li>
+                <li><a href="courseMaterials.php">課程教材(Course materials)</a></li>
+                <li><a href="miscellany.php">雜記(Miscellanies)</a></li>
+                <li  class="active"><a href="link.php">連結(Link)</a></li>
+                <li ><a href="lab.php">實驗室(Lab)</a></li>
 
             </ul><br>
             <div class="input-group">
@@ -97,7 +114,7 @@
             </div>
         </div>
 
-        <div class="col-sm-9  " align="center" style="font-family: 'Kalam', cursive;height: 100%;background-color: #fe9aff" 　>
+        <div class="col-sm-9  " align="center" style="font-family: \'Kalam\', cursive;height: 100%;background-color: #fe9aff" 　>
             <h1>Wei-Zu Yang 楊偉儒</h1>
             <h4><small>Assistant Professor of Department of Computer Science and Information Engineering,</small></h4>
             <h4><small>Asia University, WuFeng, Taichung, Taiwan.</small></h4>
@@ -280,4 +297,4 @@
 </footer>
 
 </body>
-</html>
+</html>';?>
